@@ -1,9 +1,0 @@
-Build.PL
-lib/FreeBSD/FsStat.pm
-lib/FreeBSD/FsStat.xs
-MANIFEST			This list of files
-META.json
-META.yml
-README.md
-t/simple.t
-Makefile.PL
