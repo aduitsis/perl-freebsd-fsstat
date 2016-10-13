@@ -1,10 +1,13 @@
 package FreeBSD::FsStat;
+
 use strict;
 use warnings;
 use vars qw($VERSION @ISA @EXPORT @EXPORT_OK $AUTOLOAD);
 
 require Exporter;
 require DynaLoader;
+
+use FreeBSD::FileSystem;
 
 @ISA = qw(Exporter DynaLoader);
 
@@ -29,6 +32,17 @@ Query a FreeBSD system for the list of mounted filesystems.
 =head1 METHODS
 
 =over 2
+
+=item get_filesystems
+
+Returns a list of L<FreeBSD::FileSystem> objects, corresponding
+to the filesystems of the host.
+
+=cut
+
+sub get_filesystems {
+	map { FreeBSD::FileSystem->new( $_ ) } @{ &getfsstat() }
+}
 
 =item getfsstat
 

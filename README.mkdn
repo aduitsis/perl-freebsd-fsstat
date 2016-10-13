@@ -4,7 +4,7 @@ FreeBSD::FsStat - Get mounted filesystems in FreeBSD
 
 # VERSION
 
-version 0.102
+version 0.103
 
 # SYNOPSIS
 
@@ -15,6 +15,11 @@ version 0.102
 Query a FreeBSD system for the list of mounted filesystems.
 
 # METHODS
+
+- get\_filesystems
+
+    Returns a list of [FreeBSD::FileSystem](https://metacpan.org/pod/FreeBSD::FileSystem) objects, corresponding
+    to the filesystems of the host.
 
 - getfsstat
 
