@@ -64,7 +64,7 @@ Returns the directory where this filesystem is mounted.
 has mountpoint => (
 	is		=> 'ro',
 	isa		=> 'Str',
-	init_arg	=> 'f_mntfromname',
+	init_arg	=> 'f_mnttoname',
 );
 
 =item blocksize
