@@ -21,7 +21,7 @@ FreeBSD::FileSystem - Class representing a filesystem in a FreeBSD host
 
 =head1 DESCRIPTION
 
- This class encapsulates a FreeBSD filesystem information.
+This class encapsulates a FreeBSD filesystem information.
 
 =head1 METHODS
 
