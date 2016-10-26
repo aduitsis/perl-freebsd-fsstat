@@ -122,7 +122,7 @@ sub size {
 	$_[0]->blocks * $_[0]->blocksize
 }
 
-=item size
+=item free
 
 Returns the number of free bytes in this filesystem.
 
